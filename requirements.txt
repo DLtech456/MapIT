@@ -1,4 +1,4 @@
-Flask = 0.12.2
-location = 0.0.7
-socketpy=0.3.4
+Flask == 0.12.2
+location == 0.0.7
+socketpy == 0.3.4
 uwsgi
