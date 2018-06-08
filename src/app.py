@@ -4,7 +4,7 @@ from src.models.processdata import LookUpSC
 
 
 app = Flask(__name__)
-app.secret_key ="NameHere"
+app.secret_key ="123"
 
 @app.route('/')
 def homepage():
