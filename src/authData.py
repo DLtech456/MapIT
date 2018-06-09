@@ -1,6 +1,6 @@
-
+import os
 
 DEBUG = False
 ADMINS = frozenset([''])
 
-api_key="AIzaSyDgrTgCDB5U-TFdhIf9_T2lWT5AqpOkP_4"
+api_key=os.environ.get('gMapsKey')
