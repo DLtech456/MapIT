@@ -1,7 +1,7 @@
 
 from flask import Flask, render_template, session, request
 from src.models.processdata import LookUpSC
-
+from src.authData import api_key
 
 app = Flask(__name__)
 app.secret_key ="123"
@@ -24,7 +24,7 @@ def ouputvalues():
         rt = LookUpSC.LatLong(val1)
         glat = rt[1]
         glong = rt[2]
-        return render_template('mappic.html', stcty1=val1, stcty2=val2, glat=glat, glong=glong,val1=val1, val2=val2)
+        return render_template('mappic.html', stcty1=val1, stcty2=val2, glat=glat, glong=glong,val1=val1, val2=val2,api_key = api_key)
 
 
 if __name__ == '__main__':
