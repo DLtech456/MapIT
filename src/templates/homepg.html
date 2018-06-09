@@ -1,5 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
+
+
+<div class="w3-panel">
+  <i class="w3-xlarge fa fa-bars"></i>
+</div>
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+<div class="w3-half w3-container">
+  <h1 class="w3-xxlarge w3-text-light-grey">Hello!</h1>
+  <h1 class="w3-xxlarge w3-text-grey">Address</h1>
+  <h1 class="w3-jumbo">Insights</h1>
+</div>
+<div class="w3-half w3-container w3-xlarge w3-text-grey">
+  <p class="">We try to provide all the information for
+    the provided address. The objective of this is to empower
+    anyone who wants to consider everything related to an address</p>
+  <p>All the information provided are obtained from opensource such as Google, Zillow etc., If you have any questions regarding the quality of data provided please reach out to them directly</p>
+</div>
+</div>
+
+
     <form id="entry-form" action="/profile" method="post">
         <p></p>
         Enter Address 1: <input type="text" id="City,State" name="StCty1">
